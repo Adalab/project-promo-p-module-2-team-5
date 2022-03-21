@@ -4,42 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/80215896bb.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Awesome User Profile Cards</title>
   </head>
   <body>
-    <header class="border1">
-      <img
-        src="./assets/images/logo-awesome-profile-cards.svg"
-        alt="Logo de la aplicación"
-      />
-    </header>
-    <main class="border1">
-      <section class="border2">
-        <button class="border3">Reset</button>
-        <div class="border3">
-          <h3>Tarjeta editable</h3>
-        </div>
-      </section>
-      <section class="border2">
-        <form class="border3">
-          <fieldset class="border4">Diseña</fieldset>
-          <label>Colores</label>
-          <fieldset class="border4">Rellena</fieldset>
-          <label>Nombre completo</label>
-          <label>Puesto</label>
-          <label>Imagen de perfil</label>
-          <label>Email</label>
-          <label>Teléfono</label>
-          <label>Redes sociales (Linkedin y GitHub)</label>
-          <fieldset class="border4">Comparte</fieldset>
-          <button class="border3">Crear tarjeta</button>
-        </form>
-      </section>
+    <include src="./partials/header.html"></include>
+    <main>
+      <include src="./partials/main-preview.html"></include>
+      <include src="./partials/main-form.html"></include>
     </main>
-    <footer class="border1">
-      <small>Awesome profile-cards @2022</small>
-      <img src="./assets/images/logo-adalab.png" alt="Logo Adalab" />
-    </footer>
+    <include src="./partials/footer.html"></include>
   </body>
 </html>
