@@ -1,39 +1,61 @@
-<form>
+<form class="form">
+  <!--DESIGN-->
+  <fieldset class="design-fieldset">
+    <div class="design">
+      <i class="fa-regular fa-object-ungroup screens"></i>
+      <p class="design__text-design">Diseña</p>
+      <i class="fa-solid fa-angle-up collapsible"></i>
+    </div>
+    <!--COLORS-->
+    <label for="palette" class="colors">Colores</label>
+    <!--PALLETE ONE-->
+    <div class="colors__colors-box">
+      <input
+        class="colors__colors-input"
+        type="radio"
+        name="palette"
+        id="palette"
+      />
+      <span class="spectrum-blue1"></span>
+      <span class="spectrum-blue2"></span>
+      <span class="spectrum-blue3"></span>
+    </div>
+    <!--PALETTE TWO-->
+    <div class="colors__colors-box">
+      <input
+        class="colors__colors-input"
+        type="radio"
+        name="palette"
+        id="palette"
+      />
+      <span class="spectrum-blue1__spectrum-warm1"></span>
+      <span class="spectrum-blue2__spectrum-warm2"></span>
+      <span class="spectrum-blue3__spectrum-warm3"></span>
+    </div>
+    <!--PALETTE THREE-->
+    <div class="colors__colors-box">
+      <input
+        class="colors__colors-input"
+        type="radio"
+        name="palette"
+        id="palette"
+      />
+      <span class="spectrum-blue1__spectrum-mix1"></span>
+      <span class="spectrum-blue2__spectrum-mix2"></span>
+      <span class="spectrum-blue3__spectrum-mix3"></span>
+    </div>
+  </fieldset>
+  <!--STUFFED-->
   <fieldset>
-    <div>
-      <i class="fa-regular fa-object-ungroup"></i>
-      <p>Diseña</p>
-      <i class="fa-solid fa-angle-up"></i>
-    </div>
-    <label for="palette">Colores</label>
-    <div>
-        <input type="radio" name="palette" id="palette" />
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div>
-      <input type="radio" name="palette" id="palette" />
-      <span></span
-      <span></span>
-      <span></span>
-    </div>
-    <div>
-      <input type="radio" name="palette" id="palette" />
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-   </fieldset>
-   <fieldset>
     <div>
       <i class="fa-light fa-keyboard"></i>
       <p>Rellena</p>
       <i class="fa-solid fa-angle-up"></i>
     </div>
-
+    <!--NAME-->
     <label for="name">Nombre completo</label>
     <input id="name" type="text" name="name" placeholder="Ej: Pepita Pérez" />
+    <!--PROFESSION-->
     <label for="profession">Puesto</label>
     <input
       id="profession"
@@ -41,9 +63,10 @@
       name="profession"
       placeholder="Ej: Front-end developer"
     />
+    <!--ADD IMAGE-->
     <label for="image">Imagen de perfil</label>
     <label for="image">Añadir imagen</label>
-
+    <!--EMAIL-->
     <label for="email">Email</label>
     <input
       id="email"
@@ -51,10 +74,10 @@
       name="email"
       placeholder="Ej: pepita.perez@gmail.com"
     />
-
+    <!--PHONE-->
     <label for="telef">Teléfono</label>
     <input id="telef" type="tel" placeholder="Ej: 000-000-000" />
-
+    <!--SOCIAL MEDIA-->
     <label for="Linkedin">Linkedin</label>
     <input
       type="text"
@@ -66,6 +89,7 @@
     <label>GitHub</label>
     <input type="text" name="GitHub" id="GitHub" placeholder="Ej: @Pepiperez" />
   </fieldset>
+  <!--SHARE AND CARD-->
   <fieldset>
     <div>
       <i class="fa-solid fa-square-share-nodes"></i>
