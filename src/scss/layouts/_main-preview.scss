@@ -7,6 +7,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  &__aliner-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 ///BUTTON PREVIEW SECTION
@@ -14,19 +20,25 @@
 .reset-button {
   width: 75px;
   height: 30px;
-  padding: 5px;
   border-radius: 15px;
-  border-color: $white-two;
+  border: solid 1px $white-two;
   background-color: transparent;
+
   font-family: $open;
   font-weight: $regular;
   font-size: 0.75rem;
   color: $gun-metal;
   text-transform: uppercase;
 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
   &__trash {
     width: 11px;
     height: 20px;
+    line-height: 1.67;
   }
 }
 
@@ -42,10 +54,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-
-  //SOMBREADO
-  border: 1px solid  blue;
-  box-shadow: 2px 2px 2px rgb(15, 12, 11);
+  box-shadow: 0 1px 10px 0 $black-02, 0 1px 3px 0 $black-035;
 
   //DIV DECORATION NAME + PROFESSION
 
@@ -75,6 +84,9 @@
   &__image {
     width: 240px;
     height: 200px;
+    background-image: url("../images/profile-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
