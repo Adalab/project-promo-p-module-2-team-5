@@ -1,121 +1,125 @@
 // DESIGN FIELDSET
 
 .design-fieldset {
-    height: 240px;
-    border: none;
-    margin-bottom: 20px;
-  }
-  
-  // DESIGN DIV
-  
-  .design {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 27px 20px 22px;
-  
-    &__text-design {
-      font-family: $open;
-      font-weight: $semi-bold;
-      font-size: 1.125rem;
-      color: $gun-metal;
-      text-transform: uppercase;
-      width: 65px;
-      margin-right: 8.5em;
-    }
-  }
-  
-  // DESIGN ICONS
-  
-  .screens {
-    font-size: 1.125rem;
-    color: $dull-orange;
-  }
-  
-  .collapsible {
-    font-size: 1.125rem;
-    color: $gun-metal;
-  }
-  
-  // COLORS LABEL/INPUT + DIV
-  
-  .colors {
+  height: 240px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+// DESIGN DIV
+
+.design {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px 5px 22px;
+
+  &__text-design {
     font-family: $open;
-    font-weight: $regular;
-    font-size: 0.875rem;
+    font-weight: $semi-bold;
+    font-size: 1.125rem;
     color: $gun-metal;
     text-transform: uppercase;
-    padding-left: 39px;
-  
-    &__colors-box {
-      display: flex;
-      justify-content: flex-end;
-      // padding-right: 120px;
-    }
-  
-    &__colors-input {
-      width: 17px;
-      height: 17px;
-      margin: 5px 10px 28px;
-    }
+    width: 65px;
+    flex-grow: 5;
+    text-align: left;
   }
-  
-  // SPAN
-  
-  .spectrum-blue1 {
+}
+
+// DESIGN ICONS
+
+.screens {
+  font-size: 1.125rem;
+  color: $dull-orange;
+  flex-grow: 1;
+}
+
+.collapsible {
+  font-size: 1.125rem;
+  color: $gun-metal;
+  flex-grow: 1;
+}
+
+// COLORS LABEL/INPUT + DIV
+
+.colors {
+  font-family: $open;
+  font-weight: $regular;
+  font-size: 0.875rem;
+  color: $gun-metal;
+  text-transform: uppercase;
+  padding-left: 39px;
+  flex-grow: 1;
+  text-align: left;
+
+  &__colors-box {
+    display: flex;
+    justify-content: flex-end;
+    // padding-right: 120px;
+  }
+
+  &__colors-input {
+    width: 17px;
+    height: 17px;
+    margin: 5px 10px 28px;
+  }
+}
+
+// SPAN
+
+.spectrum-blue1 {
+  width: 30px;
+  height: 25px;
+  background-color: $dark-green-blue;
+
+  &__spectrum-warm1 {
     width: 30px;
     height: 25px;
-    background-color: $dark-green-blue;
-  
-    &__spectrum-warm1 {
-      width: 30px;
-      height: 25px;
-      background-color: $dried-blood;
-    }
-  
-    &__spectrum-mix1 {
-      width: 30px;
-      height: 25px;
-      background-color: $slate;
-    }
+    background-color: $dried-blood;
   }
-  
-  .spectrum-blue2 {
+
+  &__spectrum-mix1 {
     width: 30px;
     height: 25px;
-    background-color: $dirty-blue;
-  
-    &__spectrum-warm2 {
-      width: 30px;
-      height: 25px;
-      background-color: $rusty-red;
-    }
-  
-    &__spectrum-mix2 {
-      width: 30px;
-      height: 25px;
-      background-color: $faded-orange;
-    }
+    background-color: $slate;
   }
-  
-  .spectrum-blue3 {
+}
+
+.spectrum-blue2 {
+  width: 30px;
+  height: 25px;
+  background-color: $dirty-blue;
+
+  &__spectrum-warm2 {
     width: 30px;
     height: 25px;
-    background-color: $hospital-green;
+    background-color: $rusty-red;
+  }
+
+  &__spectrum-mix2 {
+    width: 30px;
+    height: 25px;
+    background-color: $faded-orange;
+  }
+}
+
+.spectrum-blue3 {
+  width: 30px;
+  height: 25px;
+  background-color: $hospital-green;
+  margin-right: 20px;
+
+  &__spectrum-warm3 {
+    width: 30px;
+    height: 25px;
+    background-color: $tomato;
     margin-right: 20px;
-  
-    &__spectrum-warm3 {
-      width: 30px;
-      height: 25px;
-      background-color: $tomato;
-      margin-right: 20px;
-    }
-  
-    &__spectrum-mix3 {
-      width: 30px;
-      height: 25px;
-      background-color: $light-grey-blue;
-      margin-right: 20px;
-    }
   }
-  
+
+  &__spectrum-mix3 {
+    width: 30px;
+    height: 25px;
+    background-color: $light-grey-blue;
+    margin-right: 20px;
+  }
+}
