@@ -1,0 +1,99 @@
+// STUFFED FIELDSET
+
+.stuffed-fieldset {
+  height: 606px;
+  border: none;
+  border-top: 1.5px solid $grey;
+  padding-top: 10px;
+  margin-bottom: 80px;
+}
+
+// STUFFED DIV
+
+.stuffed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px 5px 22px;
+
+  &__text-stuffed {
+    font-family: $open;
+    font-weight: $semi-bold;
+    font-size: 1.125rem;
+    color: $gun-metal;
+    text-transform: uppercase;
+    width: 65px;
+    flex-grow: 5;
+    text-align: left;
+  }
+
+  &__stuffed-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    text-align: left;
+    border-bottom: 1.5px solid $grey;
+    padding-bottom: 10px;
+  }
+}
+
+// STUFFED ICONS
+
+.keyboard {
+  font-size: 1.125rem;
+  color: $dull-orange;
+  flex-grow: 1;
+}
+
+.collapsible {
+  font-size: 1.125rem;
+  color: $gun-metal;
+  flex-grow: 1;
+}
+
+// STUFFED FORM
+
+.stuffed-titles {
+  font-family: $open;
+  color: $dark-green-blue;
+  line-height: 20px;
+  padding-bottom: 7px;
+
+  &__stuffed-texts {
+    font-family: $open;
+    font-size: 14px;
+    color: $grey-placeholder;
+    line-height: 20px;
+    margin-bottom: 20px;
+    padding: 3px 0 7px 9px;
+    border: 1.5px solid $hospital-green;
+  }
+}
+
+// STUFFED ADD IMAGE
+
+.false-stuffed {
+  display: flex;
+  gap: 20px;
+
+  &__false-button {
+    font-family: $open;
+    font-size: 14px;
+    line-height: 20px;
+    color: $white-two;
+    background-color: $dull-orange;
+    width: 140px;
+    text-align: center;
+    padding: 3px 0 7px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  }
+
+  &__false-square {
+    width: 30px;
+    height: 30px;
+    background-color: $white-two;
+    border: 1.5px solid $hospital-green;
+  }
+}

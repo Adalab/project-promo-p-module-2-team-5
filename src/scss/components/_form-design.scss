@@ -1,9 +1,8 @@
 // DESIGN FIELDSET
 
 .design-fieldset {
-  height: 240px;
+  height: 224px;
   border: none;
-  margin-bottom: 20px;
 }
 
 // DESIGN DIV
@@ -65,42 +64,18 @@
   }
 }
 
-// SPAN
+// SPAN BLUE
 
 .spectrum-blue1 {
   width: 30px;
   height: 25px;
   background-color: $dark-green-blue;
-
-  &__spectrum-warm1 {
-    width: 30px;
-    height: 25px;
-    background-color: $dried-blood;
-  }
-
-  &__spectrum-mix1 {
-    width: 30px;
-    height: 25px;
-    background-color: $slate;
-  }
 }
 
 .spectrum-blue2 {
   width: 30px;
   height: 25px;
   background-color: $dirty-blue;
-
-  &__spectrum-warm2 {
-    width: 30px;
-    height: 25px;
-    background-color: $rusty-red;
-  }
-
-  &__spectrum-mix2 {
-    width: 30px;
-    height: 25px;
-    background-color: $faded-orange;
-  }
 }
 
 .spectrum-blue3 {
@@ -108,18 +83,45 @@
   height: 25px;
   background-color: $hospital-green;
   margin-right: 20px;
+}
 
-  &__spectrum-warm3 {
-    width: 30px;
-    height: 25px;
-    background-color: $tomato;
-    margin-right: 20px;
-  }
+// SPAN WARM
 
-  &__spectrum-mix3 {
-    width: 30px;
-    height: 25px;
-    background-color: $light-grey-blue;
-    margin-right: 20px;
-  }
+.spectrum-warm1 {
+  width: 30px;
+  height: 25px;
+  background-color: $dried-blood;
+}
+
+.spectrum-warm2 {
+  width: 30px;
+  height: 25px;
+  background-color: $rusty-red;
+}
+
+.spectrum-warm3 {
+  width: 30px;
+  height: 25px;
+  background-color: $tomato;
+  margin-right: 20px;
+}
+
+// SPAN MIX
+
+.spectrum-mix1 {
+  width: 30px;
+  height: 25px;
+  background-color: $slate;
+}
+.spectrum-mix2 {
+  width: 30px;
+  height: 25px;
+  background-color: $faded-orange;
+}
+
+.spectrum-mix3 {
+  width: 30px;
+  height: 25px;
+  background-color: $light-grey-blue;
+  margin-right: 20px;
 }
