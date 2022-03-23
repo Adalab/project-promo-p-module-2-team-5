@@ -43,6 +43,10 @@
   align-items: flex-start;
   justify-content: center;
 
+  //SOMBREADO
+  border: 1px solid  blue;
+  box-shadow: 2px 2px 2px rgb(15, 12, 11);
+
   //DIV DECORATION NAME + PROFESSION
 
   &__div {
