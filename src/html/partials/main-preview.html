@@ -1,25 +1,39 @@
-<section>
-  <button>
-    <i class="fa-regular fa-trash-can"></i>
+<section class="preview-section">
+  <button class="reset-button">
+    <i class="fa-regular fa-trash-can reset-button__trash"></i>
     Reset
   </button>
-  <article>
-    <h3>Nombre apellido</h3>
-    <p>Front-end developer</p>
-    <img src="#" alt="imagen de perfil" />
-    <nav>
-      <ul>
-        <li>
-          <a href="#"><i class="fa-regular fa-mobile-screen-button"></i></a>
+  <article class="preview-card">
+    <div class="preview-card__div">
+      <h3 class="preview-card__div--name">Nombre apellido</h3>
+      <p class="preview-card__div--profession">Front-end developer</p>
+    </div>
+    <img
+      src="./assets/images/profile-image.jpg"
+      alt="imagen de perfil"
+      class="preview-card__image"
+    />
+    <nav class="">
+      <ul class="card-list">
+        <li class="card-list__item">
+          <a href="#" class="card-list__item--link"
+            ><i class="fa-regular fa-mobile-screen-button"></i
+          ></a>
         </li>
-        <li>
-          <a href="#"><i class="fa-regular fa-envelope"></i></a>
+        <li class="card-list__item">
+          <a href="#" class="card-list__item--link"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
         </li>
-        <li>
-          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <li class="card-list__item">
+          <a href="#" class="card-list__item--link"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
         </li>
-        <li>
-          <a href="#"><i class="fa-brands fa-github-alt"></i></a>
+        <li class="card-list__item">
+          <a href="#" class="card-list__item--link"
+            ><i class="fa-brands fa-github-alt"></i
+          ></a>
         </li>
       </ul>
     </nav>

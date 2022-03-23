@@ -1,0 +1,101 @@
+//BACKGROUND PREVIEW SECTION
+
+.preview-section {
+  padding: 38px 0 40px 0;
+  background-image: linear-gradient($silver, $pale-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+///BUTTON PREVIEW SECTION
+
+.reset-button {
+  width: 75px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 15px;
+  border-color: $white-two;
+  background-color: transparent;
+  font-family: $open;
+  font-weight: $regular;
+  font-size: 0.75rem;
+  color: $gun-metal;
+  text-transform: uppercase;
+
+  &__trash {
+    width: 11px;
+    height: 20px;
+  }
+}
+
+//PROFILE CARD AT PREVIEW SECTION
+
+.preview-card {
+  width: 240px;
+  height: 329px;
+  margin-top: 20px;
+  border-radius: 2px;
+  background-color: $white-two;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  //DIV DECORATION NAME + PROFESSION
+
+  &__div {
+    margin: 23px 0 10px 0;
+    border-left: solid 5px;
+    border-color: $dirty-blue;
+    padding-left: 15px;
+
+    &--name {
+      font-family: $montse;
+      font-weight: $bold;
+      font-size: 1.125rem;
+      color: $dark-green-blue;
+      text-transform: capitalize;
+    }
+    &--profession {
+      font-family: $montse;
+      font-weight: $regular;
+      font-size: 1rem;
+      color: $gun-metal;
+    }
+  }
+
+  //IMAGE OF PROFILE CARD
+
+  &__image {
+    width: 240px;
+    height: 200px;
+  }
+}
+
+//"BUTTON-ICONS" AT PROFILE CARD
+
+.card-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 5px 57px 7px 15px;
+
+  &__item {
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px;
+    border-radius: 16px;
+    border-color: $hospital-green;
+
+    &--link {
+      text-decoration: none;
+      color: $dark-green-blue;
+    }
+  }
+}
