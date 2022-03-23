@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    font-family: $open;
+    color: $brownish-grey;
+   
+    &__logofoot {
+      height: 40px;
+      width: 103px;
+    }
+  }
+  
