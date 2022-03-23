@@ -115,13 +115,22 @@ main {
         height: 29px;
         width: 32px;
       }
-      /*&__item i {
-        font-size: 28px;
-      }*/
+
       .button {
         margin: 186px 145px 0;
         text-transform: uppercase;
       }
     }
   }
+
+  .fa-solid,
+  .fas {
+    font-size: 29px;
+  }
+
+  .fa-regular, .far {
+    font-size: 29px;
+}
+
+
 }
