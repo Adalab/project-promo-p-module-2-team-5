@@ -3,7 +3,6 @@
 .stuffed-fieldset {
   height: 606px;
   border: none;
-  border-top: 1.5px solid $grey;
   padding-top: 10px;
   margin-bottom: 80px;
 }
@@ -32,8 +31,6 @@
     flex-direction: column;
     margin: 0 20px;
     text-align: left;
-    border-bottom: 1.5px solid $grey;
-    padding-bottom: 10px;
   }
 }
 
@@ -49,6 +46,16 @@
   font-size: 1.125rem;
   color: $gun-metal;
   flex-grow: 1;
+}
+
+// CUTTING LINE
+
+.cutting-line2 {
+  border: solid 1px #d8d8d8;
+  border-bottom: 2px;
+  inline-size: 280px;
+  margin-top: 15px;
+  align-self: center;
 }
 
 // STUFFED FORM

@@ -3,6 +3,12 @@
 .design-fieldset {
   height: 224px;
   border: none;
+
+  &__design-section {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
 }
 
 // DESIGN DIV
@@ -37,6 +43,16 @@
   font-size: 1.125rem;
   color: $gun-metal;
   flex-grow: 1;
+}
+
+// CUTTING LINE
+
+.cutting-line1 {
+  border: solid 1px #d8d8d8;
+  border-bottom: 2px;
+  inline-size: 280px;
+  margin-top: 15px;
+  align-self: center;
 }
 
 // COLORS LABEL/INPUT + DIV
