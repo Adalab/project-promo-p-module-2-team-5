@@ -17,7 +17,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 27px 5px 22px;
+  padding: 27px 20px 22px;
 
   &__text-design {
     font-family: $open;
@@ -48,11 +48,17 @@
 // CUTTING LINE
 
 .cutting-line1 {
+  width: 87vw;
   border: solid 1px #d8d8d8;
   border-bottom: 2px;
-  inline-size: 280px;
   margin-top: 15px;
   align-self: center;
+  @media all and (min-width: 768px) {
+    width: 48vw;
+  }
+  @media all and (min-width: 1200px) {
+    width: 34vw;
+  }
 }
 
 // COLORS LABEL/INPUT + DIV

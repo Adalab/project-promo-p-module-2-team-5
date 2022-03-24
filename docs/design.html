@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!--FONT AWESOME-->
+    <script
+      src="https://kit.fontawesome.com/80215896bb.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Awesome User Profile Cards</title>
+  </head>
+  <body>
+    <header>
+      <img class="logohead"
+        src="./assets/images/logo-awesome-profile-cards.svg"
+        alt="Logo de la aplicación"
+      />
+    </header>
+
+    <main class="align-design">
+      <section class="preview-section">
+        <div class="preview-section__aliner-div">
+          <button class="reset-button">
+            <i class="fa-regular fa-trash-can reset-button__trash"></i>
+            <span class="reset-button__text">Reset</span>
+          </button>
+          <article class="preview-card">
+            <div class="preview-card__div">
+              <h3 class="preview-card__div--name">Nombre apellido</h3>
+              <p class="preview-card__div--profession">Front-end developer</p>
+            </div>
+            <div class="preview-card__image"></div>
+            <nav class="">
+              <ul class="card-list">
+                <li class="card-list__item">
+                  <a href="#" class="card-list__item--link"
+                    ><i class="fa-solid fa-mobile-screen-button"></i
+                  ></a>
+                </li>
+                <li class="card-list__item">
+                  <a href="#" class="card-list__item--link"
+                    ><i class="fa-regular fa-envelope"></i
+                  ></a>
+                </li>
+                <li class="card-list__item">
+                  <a href="#" class="card-list__item--link"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li class="card-list__item">
+                  <a href="#" class="card-list__item--link"
+                    ><i class="fa-brands fa-github-alt"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+        </div>
+      </section>
+
+      <form class="form">
+        <!--DESIGN-->
+        <fieldset class="design-fieldset">
+          <div class="design">
+            <i class="fa-regular fa-object-ungroup screens"></i>
+            <p class="design__text-design">Diseña</p>
+            <i class="fa-solid fa-angle-up collapsible"></i>
+          </div>
+          <!--COLORS-->
+          <!--PALLETE ONE-->
+          <section class="design-fieldset__design-section">
+            <div class="colors__colors-box">
+              <label for="palette" class="colors">Colores</label>
+              <input
+                class="colors__colors-input"
+                type="radio"
+                name="palette"
+                id="palette"
+              />
+              <span class="spectrum-blue1"></span>
+              <span class="spectrum-blue2"></span>
+              <span class="spectrum-blue3"></span>
+            </div>
+            <!--PALETTE TWO-->
+            <div class="colors__colors-box">
+              <input
+                class="colors__colors-input"
+                type="radio"
+                name="palette"
+                id="palette"
+              />
+              <span class="spectrum-warm1"></span>
+              <span class="spectrum-warm2"></span>
+              <span class="spectrum-warm3"></span>
+            </div>
+            <!--PALETTE THREE-->
+            <div class="colors__colors-box">
+              <input
+                class="colors__colors-input"
+                type="radio"
+                name="palette"
+                id="palette"
+              />
+              <span class="spectrum-mix1"></span>
+              <span class="spectrum-mix2"></span>
+              <span class="spectrum-mix3"></span>
+            </div>
+            <span class="cutting-line1"></span>
+          </section>
+        </fieldset>
+
+        <!--STUFFED-->
+        <fieldset class="stuffed-fieldset">
+          <div class="stuffed">
+            <i class="fa-regular fa-keyboard keyboard"></i>
+            <p class="stuffed__text-stuffed">Rellena</p>
+            <i class="fa-solid fa-angle-up collapsible"></i>
+          </div>
+          <!--NAME-->
+          <div class="stuffed__stuffed-form">
+            <label class="stuffed-titles" for="name">Nombre completo</label>
+            <input
+              class="stuffed-titles__stuffed-texts"
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Ej: Pepita Pérez"
+            />
+            <!--PROFESSION-->
+            <label class="stuffed-titles" for="profession">Puesto</label>
+            <input
+              class="stuffed-titles__stuffed-texts"
+              id="profession"
+              type="text"
+              name="profession"
+              placeholder="Ej: Front-end developer"
+            />
+            <!--ADD IMAGE-->
+            <label class="stuffed-titles" for="image">Imagen de perfil</label>
+            <div class="false-stuffed">
+              <label class="false-stuffed__false-button" for="image"
+                >Añadir imagen</label
+              >
+              <span class="false-stuffed__false-square"></span>
+            </div>
+            <!--EMAIL-->
+            <label class="stuffed-titles" for="email">Email</label>
+            <input
+              class="stuffed-titles__stuffed-texts"
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Ej: pepita.perez@gmail.com"
+            />
+            <!--PHONE-->
+            <label class="stuffed-titles" for="telef">Teléfono</label>
+            <input
+              class="stuffed-titles__stuffed-texts"
+              id="telef"
+              type="tel"
+              placeholder="Ej: 000-000-000"
+            />
+            <!--SOCIAL MEDIA-->
+            <label class="stuffed-titles" for="Linkedin">Linkedin</label>
+            <input
+              class="stuffed-titles__stuffed-texts"
+              type="text"
+              name="Linkedin"
+              id="Linkedin"
+              placeholder="Ej: linkedin.com/in/Pepita/Perez"
+            />
+            <label class="stuffed-titles" for="GitHub">GitHub</label>
+            <input
+              class="stuffed-titles__stuffed-texts"
+              type="text"
+              name="GitHub"
+              id="GitHub"
+              placeholder="Ej: @Pepiperez"
+            />
+            <span class="cutting-line2"></span>
+          </div>
+        </fieldset>
+
+        <!--SHARE AND CARD-->
+        <fieldset class="design-share">
+          <div class="share-legend">
+            <i class="fa-solid fa-square-share-nodes share-legend__icon"></i>
+            <p class="share-legend__text">Comparte</p>
+            <i class="fa-solid fa-angle-up share-legend__arrow"></i>
+          </div>
+          <section class="section-share-1">
+            <button class="card-button">
+              <i class="fa-solid fa-address-card card-button__icon"></i>
+              <span class="card-button__text">Crear tarjeta</span>
+            </button>
+            <span class="section-share__line"></span>
+          </section>
+          <section class="share-newcard">
+            <h3 class="share-newcard__text">La tarjeta ha sido creada:</h3>
+            <a
+              class="share-newcard__link"
+              href="https://awesome-profile-card.com?id=A456DF0001"
+              >https://awesome-profile-card.com?id=A456DF0001</a
+            >
+            <button class="share-newcard__button">
+              <i class="fa-brands fa-twitter"></i><span>Compartir en twitter</span>
+            </button>
+            <span class="section-share__line"></span>
+          </section>
+        </fieldset>
+
+      </form>
+
+    </main>
+    <footer>
+      <div class="footer">
+      <small>Awesome profile-cards @2022</small>
+      <img class="footer__logofoot" src="./assets/images/logo-adalab.png" alt="Logo Adalab" />
+      </div>
+    </footer>
+
+  </body>
+</html>

@@ -1,5 +1,21 @@
 @import "core/reset";
 @import "core/variables";
+
+.align-landing {
+  width: 100vw;
+  height: 100vh;
+}
+
+@media all and (min-width: 768px) {
+  .align-design {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, $white-four, $white-two 9%);
+  }
+}
+
 @import "layouts/header";
 @import "layouts/footer";
 @import "layouts/main-landing";

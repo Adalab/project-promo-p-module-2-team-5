@@ -1,4 +1,4 @@
-main {
+.main-landing {
   background-color: $white-four;
   align-items: center;
   text-align: center;
@@ -25,6 +25,7 @@ main {
   }
 
   &__parraf {
+    margin: 0 28px;
     font-family: $open;
     color: $dark-green-blue;
     font-size: 0.8rem;
@@ -81,7 +82,8 @@ main {
 @media (min-width: 768px) {
   .container1 {
     &__logoMain {
-      margin-top: 350px;
+      margin-top: 255px;
+
       height: 105px;
       width: 419px;
     }
