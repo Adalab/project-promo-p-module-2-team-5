@@ -6,7 +6,7 @@
   border-color: transparent;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-self: center;
 }
 
 /////LEGEND FORM SHARE /////
@@ -16,23 +16,24 @@
   padding: 10px 20px 10px 20px;
   color: $gun-metal;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  align-self: flex-start;
+  justify-content: space-between;
 
   &__icon {
     flex-grow: 1;
-    text-align: left;
+    font-size: 1.425rem;
     color: $dull-orange;
   }
   &__text {
+    width: 65px;
     flex-grow: 5;
     text-align: left;
     text-transform: uppercase;
   }
   &__arrow {
-    flex-grow: 1;
-    text-align: right;
+    flex-grow: 1.8;
+    font-size: 1.125rem;
+    transform: rotate(180deg);
   }
 }
 
@@ -103,4 +104,7 @@
     background-color: $azure;
     color: $white-two;
   }
+}
+.card-hidden {
+  display: none;
 }

@@ -1,10 +1,7 @@
 // STUFFED FIELDSET
 
 .stuffed-fieldset {
-  height: 606px;
   border: none;
-  padding-top: 10px;
-  margin-bottom: 50px;
 }
 
 // STUFFED DIV
@@ -13,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 27px 20px 22px;
+  padding: 10px 20px 10px 20px;
 
   &__text-stuffed {
     font-family: $open;

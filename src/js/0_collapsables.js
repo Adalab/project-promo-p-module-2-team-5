@@ -4,8 +4,9 @@
 //abrir el colapsable que tenga el evento click
 //cerrar todos los colapsables que no estén abiertos
 
+/*CONSTANTS GLOBALES*/
 
-console.log ("holi");
+
 
 
 

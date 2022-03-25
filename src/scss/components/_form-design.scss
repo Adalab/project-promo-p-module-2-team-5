@@ -1,7 +1,6 @@
 // DESIGN FIELDSET
 
 .design-fieldset {
-  height: 224px;
   border: none;
 
   &__design-section {
@@ -17,7 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 27px 20px 22px;
+  padding: 10px 20px 10px 20px;
 
   &__text-design {
     font-family: $open;
@@ -43,6 +42,7 @@
   font-size: 1.125rem;
   color: $gun-metal;
   flex-grow: 1;
+  transform: rotate(180deg);
 }
 
 // CUTTING LINE
