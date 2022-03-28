@@ -24,8 +24,7 @@
     font-size: 1.125rem;
     color: $gun-metal;
     text-transform: uppercase;
-    width: 65px;
-    flex-grow: 5;
+    width: 100%;
     text-align: left;
   }
 }
@@ -35,16 +34,14 @@
 .screens {
   font-size: 1.125rem;
   color: $dull-orange;
-  flex-grow: 1;
+  margin-right: 20px;
 }
 
 .collapsible {
   font-size: 1.125rem;
   color: $gun-metal;
-  flex-grow: 1;
+  width: 10px;
   transform: rotate(180deg);
-}
-.rotate {
 }
 
 // CUTTING LINE

@@ -12,10 +12,24 @@ const jsShare = document.querySelector('.js-share');
 const jsArrow1 = document.querySelector('.js-arrow1');
 const jsArrow2 = document.querySelector('.js-arrow2');
 const jsArrow3 = document.querySelector('.js-arrow3');
+const jsDesignContainer = document.querySelector('.js-design-container');
+const jsStuffedContainer = document.querySelector('.js-stuffed-container');
+const jsShareContainer = document.querySelector('.js-share-container');
 
 /*FUNCIONES EVENTOS Y CONDICIONALES*/
 
-jsArrow1.addEventListener('click',()=>{
+jsDesignContainer.addEventListener('click',()=>{
   jsArrow1.classList.toggle('collapsible');
+  jsDesign.classList.toggle('hidden');
+});
+
+jsStuffedContainer.addEventListener('click',()=>{
+  jsArrow2.classList.toggle('collapsible');
+  jsStuffed.classList.toggle('hidden');
+});
+
+jsShareContainer.addEventListener('click', ()=>{
+  jsArrow3.classList.toggle('share-legend__arrow');
+  jsShare.classList.toggle('hidden');
 });
 

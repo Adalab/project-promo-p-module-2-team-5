@@ -72,14 +72,14 @@
       <form class="form">
         <!--DESIGN-->
         <fieldset class="design-fieldset">
-          <div class="design">
+          <div class="design js-design-container">
             <i class="fa-regular fa-object-ungroup screens"></i>
             <p class="design__text-design">Diseña</p>
-            <i class="fa-solid fa-angle-up collapsible"></i>
+            <i class="fa-solid fa-angle-up collapsible js-arrow1"></i>
           </div>
           <!--COLORS-->
           <!--PALLETE ONE-->
-          <section class="design-fieldset__design-section">
+          <section class="design-fieldset__design-section hidden js-design">
             <div class="colors__colors-box">
               <label for="palette" class="colors">Colores</label>
               <input
@@ -122,13 +122,13 @@
 
         <!--STUFFED-->
         <fieldset class="stuffed-fieldset">
-          <div class="stuffed">
+          <div class="stuffed js-stuffed-container">
             <i class="fa-regular fa-keyboard keyboard"></i>
             <p class="stuffed__text-stuffed">Rellena</p>
-            <i class="fa-solid fa-angle-up collapsible"></i>
+            <i class="fa-solid fa-angle-up collapsible js-arrow2"></i>
           </div>
           <!--NAME-->
-          <div class="stuffed__stuffed-form">
+          <div class="stuffed__stuffed-form hidden js-stuffed">
             <label class="stuffed-titles" for="name">Nombre completo</label>
             <input
               class="stuffed-titles__stuffed-texts"
@@ -136,6 +136,7 @@
               type="text"
               name="name"
               placeholder="Ej: Pepita Pérez"
+              required
             />
             <!--PROFESSION-->
             <label class="stuffed-titles" for="profession">Puesto</label>
@@ -145,6 +146,7 @@
               type="text"
               name="profession"
               placeholder="Ej: Front-end developer"
+              required
             />
             <!--ADD IMAGE-->
             <label class="stuffed-titles" for="image">Imagen de perfil</label>
@@ -162,6 +164,7 @@
               type="email"
               name="email"
               placeholder="Ej: pepita.perez@gmail.com"
+              required
             />
             <!--PHONE-->
             <label class="stuffed-titles" for="telef">Teléfono</label>
@@ -170,6 +173,7 @@
               id="telef"
               type="tel"
               placeholder="Ej: 000-000-000"
+              required
             />
             <!--SOCIAL MEDIA-->
             <label class="stuffed-titles" for="Linkedin">Linkedin</label>
@@ -194,19 +198,19 @@
 
         <!--SHARE AND CARD-->
         <fieldset class="design-share">
-          <div class="share-legend">
+          <div class="share-legend js-share-container">
             <i class="fa-solid fa-square-share-nodes share-legend__icon"></i>
             <p class="share-legend__text">Comparte</p>
-            <i class="fa-solid fa-angle-up share-legend__arrow"></i>
+            <i class="fa-solid fa-angle-up share-legend__arrow js-arrow3"></i>
           </div>
-          <section class="section-share-1">
+          <section class="section-share-1 hidden js-share">
             <button class="card-button">
               <i class="fa-solid fa-address-card card-button__icon"></i>
               <span class="card-button__text">Crear tarjeta</span>
             </button>
             <span class="section-share__line"></span>
           </section>
-          <section class="share-newcard">
+          <section class="share-newcard card-hidden">
             <h3 class="share-newcard__text">La tarjeta ha sido creada:</h3>
             <a
               class="share-newcard__link"
@@ -230,5 +234,7 @@
       </div>
     </footer>
 
+    <!--js-->
+    <script type="text/javascript" src="./assets/js/main.js"></script>
   </body>
 </html>

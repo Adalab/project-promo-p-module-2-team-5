@@ -18,8 +18,7 @@
     font-size: 1.125rem;
     color: $gun-metal;
     text-transform: uppercase;
-    width: 65px;
-    flex-grow: 5;
+    width: 100%;
     text-align: left;
   }
 
@@ -36,13 +35,7 @@
 .keyboard {
   font-size: 1.125rem;
   color: $dull-orange;
-  flex-grow: 1;
-}
-
-.collapsible {
-  font-size: 1.125rem;
-  color: $gun-metal;
-  flex-grow: 1;
+  margin-right: 20px;
 }
 
 // CUTTING LINE
