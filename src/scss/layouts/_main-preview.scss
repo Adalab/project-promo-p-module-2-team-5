@@ -122,3 +122,57 @@
     }
   }
 }
+
+.palette1 {
+  .rectangle {
+    border-color: $dirty-blue;
+  }
+  .name {
+    color: $dark-green-blue;
+  }
+  .profession {
+    color: $dark-green-blue;
+  }
+  .border {
+    border-color: $hospital-green;
+  }
+  .icon-palette {
+    color: $dark-green-blue;
+  }
+}
+
+.palette2 {
+  .rectangle {
+    border-color: $rusty-red;
+  }
+  .name {
+    color: $dried-blood;
+  }
+  .profession {
+    color: $dried-blood;
+  }
+  .border {
+    border-color: $tomato;
+  }
+  .icon-palette {
+    color: $dried-blood;
+  }
+}
+
+.palette3 {
+  .rectangle {
+    border-color: $faded-orange;
+  }
+  .name {
+    color: $slate;
+  }
+  .profession {
+    color: $slate;
+  }
+  .border {
+    border-color: $light-grey-blue;
+  }
+  .icon-palette {
+    color: $slate;
+  }
+}
