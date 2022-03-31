@@ -7,30 +7,29 @@ const preview = document.querySelector('.js_preview');
 
 
 function handleClickRadio1(){
-    preview.classList.remove('palette2');
-    preview.classList.remove('palette3');
-    preview.classList.add('palette1');
+  preview.classList.remove('palette2');
+  preview.classList.remove('palette3');
+  preview.classList.add('palette1');
 
 
 }
 
 function handleClickRadio2(){
-    preview.classList.remove('palette1');
-    preview.classList.remove('palette3');
-    preview.classList.add('palette2');
+  preview.classList.remove('palette1');
+  preview.classList.remove('palette3');
+  preview.classList.add('palette2');
 
 }
 
 function handleClickRadio3(){
-    preview.classList.remove('palette1');
-    preview.classList.remove('palette2');
-    preview.classList.add('palette3');
+  preview.classList.remove('palette1');
+  preview.classList.remove('palette2');
+  preview.classList.add('palette3');
 }
 
 radio1.addEventListener('click', handleClickRadio1);
 radio2.addEventListener('click', handleClickRadio2);
 radio3.addEventListener('click', handleClickRadio3);
-
 
 
 
