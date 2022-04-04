@@ -76,7 +76,6 @@
       font-weight: $bold;
       font-size: 1.125rem;
       color: $dark-green-blue;
-      text-transform: capitalize;
     }
     &--profession {
       font-family: $montse;
@@ -93,6 +92,7 @@
     height: 200px;
     background-image: url("../images/profile-image.jpg");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
   }
 }

@@ -31,35 +31,49 @@
     <main class="align-design">
       <section class="preview-section">
         <div class="preview-section__aliner-div">
-          <button class="reset-button">
+          <button class="reset-button js-reset">
             <i class="fa-regular fa-trash-can reset-button__trash"></i>
             <span class="reset-button__text">Reset</span>
           </button>
-          <article class="preview-card">
-            <div class="preview-card__div">
-              <h3 class="preview-card__div--name">Nombre apellido</h3>
-              <p class="preview-card__div--profession">Front-end developer</p>
+          <article class="preview-card js_preview">
+            <div class="preview-card__div rectangle">
+              <h3 class="preview-card__div--name name js-name js_reset-title">
+                Nombre Apellido
+              </h3>
+              <p
+                class="preview-card__div--profession profession js-profession js_reset-subtitle"
+              >
+                Front-end developer
+              </p>
             </div>
-            <div class="preview-card__image"></div>
-            <nav class="">
+            <div class="preview-card__image js__profile-image"></div>
+            <nav>
               <ul class="card-list">
-                <li class="card-list__item">
-                  <a href="#" class="card-list__item--link"
+                <li class="card-list__item border">
+                  <a
+                    href=""
+                    class="card-list__item--link icon-palette js-phone js_reset-telf"
                     ><i class="fa-solid fa-mobile-screen-button"></i
                   ></a>
                 </li>
-                <li class="card-list__item">
-                  <a href="#" class="card-list__item--link"
+                <li class="card-list__item border">
+                  <a
+                    href=""
+                    class="card-list__item--link icon-palette js-email js_reset-send"
                     ><i class="fa-regular fa-envelope"></i
                   ></a>
                 </li>
-                <li class="card-list__item">
-                  <a href="#" class="card-list__item--link"
+                <li class="card-list__item border">
+                  <a
+                    href=""
+                    class="card-list__item--link icon-palette js-linkedin js_reset-lknd"
                     ><i class="fa-brands fa-linkedin-in"></i
                   ></a>
                 </li>
-                <li class="card-list__item">
-                  <a href="#" class="card-list__item--link"
+                <li class="card-list__item border">
+                  <a
+                    href=""
+                    class="card-list__item--link icon-palette js-git js_reset-github"
                     ><i class="fa-brands fa-github-alt"></i
                   ></a>
                 </li>
@@ -79,14 +93,18 @@
           </div>
           <!--COLORS-->
           <!--PALLETE ONE-->
-          <section class="design-fieldset__design-section hidden js-design">
+          <section
+            class="design-fieldset__design-section hidden js-design js-reset-form"
+          >
             <div class="colors__colors-box">
               <label for="palette" class="colors">Colores</label>
               <input
-                class="colors__colors-input"
+                class="colors__colors-input js_radio1"
                 type="radio"
                 name="palette"
-                id="palette"
+                id="palette1"
+                value="palette1"
+                checked="selected"
               />
               <span class="spectrum-blue1"></span>
               <span class="spectrum-blue2"></span>
@@ -95,10 +113,11 @@
             <!--PALETTE TWO-->
             <div class="colors__colors-box">
               <input
-                class="colors__colors-input"
+                class="colors__colors-input js_radio2"
                 type="radio"
                 name="palette"
-                id="palette"
+                id="palette2"
+                value="palette2"
               />
               <span class="spectrum-warm1"></span>
               <span class="spectrum-warm2"></span>
@@ -107,10 +126,11 @@
             <!--PALETTE THREE-->
             <div class="colors__colors-box">
               <input
-                class="colors__colors-input"
+                class="colors__colors-input js_radio3"
                 type="radio"
                 name="palette"
-                id="palette"
+                id="palette3"
+                value="palette3"
               />
               <span class="spectrum-mix1"></span>
               <span class="spectrum-mix2"></span>
@@ -128,10 +148,12 @@
             <i class="fa-solid fa-angle-up collapsible js-arrow2"></i>
           </div>
           <!--NAME-->
-          <div class="stuffed__stuffed-form hidden js-stuffed">
+          <div
+            class="stuffed__stuffed-form hidden js-stuffed js-stuffed-form js-reset-form"
+          >
             <label class="stuffed-titles" for="name">Nombre completo</label>
             <input
-              class="stuffed-titles__stuffed-texts"
+              class="stuffed-titles__stuffed-texts js-forname js_reset-name"
               id="name"
               type="text"
               name="name"
@@ -141,7 +163,7 @@
             <!--PROFESSION-->
             <label class="stuffed-titles" for="profession">Puesto</label>
             <input
-              class="stuffed-titles__stuffed-texts"
+              class="stuffed-titles__stuffed-texts js-forjob js_reset-job"
               id="profession"
               type="text"
               name="profession"
@@ -151,15 +173,16 @@
             <!--ADD IMAGE-->
             <label class="stuffed-titles" for="image">Imagen de perfil</label>
             <div class="false-stuffed">
-              <label class="false-stuffed__false-button" for="image"
+              <label class="false-stuffed__false-button js__profile-trigger" for="image"
                 >Añadir imagen</label
               >
-              <span class="false-stuffed__false-square"></span>
+              <input class="hidden js__profile-upload-btn" type="file" id="image" />
+              <div class="false-stuffed__false-square js__profile-preview"></div>
             </div>
             <!--EMAIL-->
             <label class="stuffed-titles" for="email">Email</label>
             <input
-              class="stuffed-titles__stuffed-texts"
+              class="stuffed-titles__stuffed-texts js-formail js_reset-mail"
               id="email"
               type="email"
               name="email"
@@ -169,16 +192,17 @@
             <!--PHONE-->
             <label class="stuffed-titles" for="telef">Teléfono</label>
             <input
-              class="stuffed-titles__stuffed-texts"
-              id="telef"
+              class="stuffed-titles__stuffed-texts js-forphone js_reset-phone"
+              id="phone"
               type="tel"
+              name="phone"
               placeholder="Ej: 000-000-000"
               required
             />
             <!--SOCIAL MEDIA-->
             <label class="stuffed-titles" for="Linkedin">Linkedin</label>
             <input
-              class="stuffed-titles__stuffed-texts"
+              class="stuffed-titles__stuffed-texts js-forlkdn js_reset-linkedin"
               type="text"
               name="Linkedin"
               id="Linkedin"
@@ -186,7 +210,7 @@
             />
             <label class="stuffed-titles" for="GitHub">GitHub</label>
             <input
-              class="stuffed-titles__stuffed-texts"
+              class="stuffed-titles__stuffed-texts js-forgit js_reset-git"
               type="text"
               name="GitHub"
               id="GitHub"

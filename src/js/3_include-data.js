@@ -11,7 +11,7 @@ const paintLinkedin = document.querySelector('.js-linkedin');
 const paintGit = document.querySelector('.js-git');
 
 const data = {
-  pallete: 1,
+  palette: 1,
   name:'',
   profession:'',
   image:'',
