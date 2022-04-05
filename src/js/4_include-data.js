@@ -44,16 +44,17 @@ function handleKeyData(event) {
   if (elementTyping.name === 'name') {
     data.name = elementTyping.value;
   }
-  else if (elementTyping.name === 'palette'){
-    data.palette = elementTyping.value;
-  }
+  //else if (elementTyping.value === 'palette2'){
+   // data.palette = elementTyping.value;
+  //}
 
   else if (elementTyping.name === 'profession') {
     data.job = elementTyping.value;
   }
-  else if (elementTyping.name === 'image'){
-    data.photo = elementTyping.value;
-  }
+  //
+  //else if (elementTyping.name === 'image'){
+  //  data.photo = elementTyping.value;
+  //}
   else if (elementTyping.name === 'email') {
     data.email = elementTyping.value;
   }
@@ -69,7 +70,10 @@ function handleKeyData(event) {
   paintData();
 }
 
+
+
 dataContainer.addEventListener('keyup',handleKeyData);
+
 
 
 //si la usuaria no rellena todos los datos que salte un error antes del envío al servidor

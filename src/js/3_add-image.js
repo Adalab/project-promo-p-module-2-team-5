@@ -22,6 +22,8 @@ function getImage(e){
   const myFile = e.currentTarget.files[0];
   fr.addEventListener('load', writeImage);
   fr.readAsDataURL(myFile);
+
+  data.photo = fileField.files;
 }
 
 

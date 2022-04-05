@@ -10,20 +10,21 @@ function handleClickRadio1(){
   preview.classList.remove('palette2');
   preview.classList.remove('palette3');
   preview.classList.add('palette1');
-
+  data.palette =  radio1.value;
 }
 
 function handleClickRadio2(){
   preview.classList.remove('palette1');
   preview.classList.remove('palette3');
   preview.classList.add('palette2');
-
+  data.palette =  radio2.value;
 }
 
 function handleClickRadio3(){
   preview.classList.remove('palette1');
   preview.classList.remove('palette2');
   preview.classList.add('palette3');
+  data.palette =  radio3.value;
 }
 
 radio1.addEventListener('click', handleClickRadio1);

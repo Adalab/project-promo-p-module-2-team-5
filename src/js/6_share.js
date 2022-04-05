@@ -24,6 +24,7 @@ function handleShareCard(event) {
     .then((responseJson) => {
       console.log(responseJson);
     });
+    
 }
 
 buttonShare.addEventListener('click', handleShareCard);
