@@ -11,7 +11,6 @@ function handleClickRadio1(){
   preview.classList.remove('palette3');
   preview.classList.add('palette1');
 
-
 }
 
 function handleClickRadio2(){

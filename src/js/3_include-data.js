@@ -10,16 +10,16 @@ const paintPhone = document.querySelector('.js-phone');
 const paintLinkedin = document.querySelector('.js-linkedin');
 const paintGit = document.querySelector('.js-git');
 
-const data = {
-  palette: 1,
-  name:'',
-  profession:'',
-  image:'',
-  email: '',
-  phone:'',
-  Linkedin: '',
-  GitHub: '',
-};
+const inputName = document.querySelector (".js-forname");
+const inputJob = document.querySelector (".js-forjob");
+const inputImage = document.querySelector (".js-forimage");
+const inputMail = document.querySelector(".js-formail");
+const inputPhone = document.querySelector(".js-forphone");
+const inputLkdn = document.querySelector ("js-forlkdn");
+const inputGit = document.querySelector(".js-forgit");
+
+
+
 
 function paintData() {
   if (data.name === '') {
@@ -27,15 +27,16 @@ function paintData() {
   } else {
     paintName.innerHTML = data.name;
   }
-  if (data.profession === '') {
+  if (data.job === '') {
     paintJob.textContent = 'Front-end developer';
   } else {
-    paintJob.innerHTML = data.profession;
+    paintJob.innerHTML = data.job;
   }
+  
   paintEmail.href = `mailto:${data.email}`;
   paintPhone.href = `tel:${data.phone}`;
-  paintLinkedin.href = data.Linkedin;
-  paintGit.href = data.GitHub;
+  paintLinkedin.href = data.linkedin;
+  paintGit.href = data.github;
 }
 
 function handleKeyData(event) {
@@ -43,8 +44,15 @@ function handleKeyData(event) {
   if (elementTyping.name === 'name') {
     data.name = elementTyping.value;
   }
+  else if (elementTyping.name === 'palette'){
+    data.palette = elementTyping.value;
+  }
+
   else if (elementTyping.name === 'profession') {
-    data.profession = elementTyping.value;
+    data.job = elementTyping.value;
+  }
+  else if (elementTyping.name === 'image'){
+    data.photo = elementTyping.value;
   }
   else if (elementTyping.name === 'email') {
     data.email = elementTyping.value;
@@ -53,12 +61,15 @@ function handleKeyData(event) {
     data.phone = elementTyping.value;
   }
   else if (elementTyping.name === 'Linkedin') {
-    data.Linkedin = elementTyping.value;
+    data.linkedin = elementTyping.value;
   }
   else if (elementTyping.name === 'GitHub') {
-    data.GitHub = elementTyping.value;
+    data.github = elementTyping.value;
   }
   paintData();
 }
 
 dataContainer.addEventListener('keyup',handleKeyData);
+
+
+//si la usuaria no rellena todos los datos que salte un error antes del envío al servidor
