@@ -23,7 +23,7 @@ function getImage(e){
   fr.addEventListener('load', writeImage);
   fr.readAsDataURL(myFile);
 
-  data.photo = fileField.files;
+  
 }
 
 
@@ -39,6 +39,7 @@ function writeImage() {
    */
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
+  data.photo = fr.result;
 }
 
 

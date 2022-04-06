@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 /* eslint-disable strict */
 // 'use strict';
 // //una vez que se ha rellenado el formulario y previsualizado la tarjeta
@@ -13,18 +14,33 @@ const buttonShare = document.querySelector('.js-button-share');
 function handleShareCard(event) {
   event.preventDefault();
 
-  //if
-
   fetch('https://awesome-profile-cards.herokuapp.com/card/', {
-    method: 'POST', // method
-    headers: { 'Content-Type': 'application/json' }, // header
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data),
   })
-    .then((response) => response.json())
-    .then((responseJson) => {
-      console.log(responseJson);
-    });
-    
+  .then(function(resp) {
+    return resp.json();
+  })
+  .then(function(result) {
+    sectionLink.classList.remove('card-hidden');
+    showURL(result);
+     })
+  .catch(function(error) {
+    console.log(error);
+  });
 }
+  const shareLink = document.querySelector('.js-true');
+  const sectionLink = document.querySelector('.js-section-link');
+  function showURL(result) {
+    if (result.success) {
+      shareLink.innerHTML = '<a class="share-newcard__link" href=' + result.cardURL + '>' + result.cardURL + '</a>';
+    } else {
+      sectionLink.innerHTML = 'ERROR:' + result.error;
+     }
+ }
+
+
 
 buttonShare.addEventListener('click', handleShareCard);
+
