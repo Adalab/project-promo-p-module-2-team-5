@@ -39,6 +39,8 @@ function resetForm (){
   resetPhone.value='';
   resetLinkedin.value='';
   resetGit.value='';
+  sectionLink.classList.add('hidden');
+  buttonShare.classList.remove('button-grey');
 }
 
 function handleResetForm (event){

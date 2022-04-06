@@ -60,16 +60,20 @@
     text-transform: uppercase;
   }
 }
+.button-grey {
+  background-color: #d5d5d5;
+}
+
 .section-share__line {
   width: 87vw;
   border: solid 1px #d8d8d8;
   border-bottom: 2px;
   margin-top: 30px;
   @media all and (min-width: 768px) {
-    width: 48vw;
+    width: 90%;
   }
   @media all and (min-width: 1200px) {
-    width: 34vw;
+    width: 90%;
   }
 }
 
@@ -91,6 +95,7 @@
     margin: 5px;
     font-size: 0.75rem;
     color: $dull-orange;
+    text-align: center;
   }
   &__button {
     width: 181px;
@@ -106,4 +111,10 @@
 }
 .card-hidden {
   display: none;
+}
+
+.link-twitter {
+  color: $white-two;
+  font-size: 0.875rem;
+  text-decoration: none;
 }

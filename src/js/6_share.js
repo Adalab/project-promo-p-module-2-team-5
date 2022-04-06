@@ -10,6 +10,11 @@
 // //5. al clickar en reset o modificar campos en el formulario el boton crear tarjeta vuelve a estar activa(naranja) y desaparecerá la segunda seccion de share
 
 const buttonShare = document.querySelector('.js-button-share');
+const shareLink = document.querySelector('.js-true');
+const sectionLink = document.querySelector('.js-section-link');
+const publicTwitter = document.querySelector('.js-btn-twitter');
+const lknPublicTwitter = document.querySelector('.js-link-twitter');
+  
 
 function handleShareCard(event) {
   event.preventDefault();
@@ -24,21 +29,22 @@ function handleShareCard(event) {
   })
   .then(function(result) {
     sectionLink.classList.remove('card-hidden');
+    buttonShare.classList.add('button-grey');
+    lknPublicTwitter.classList.add('link-twitter');
     showURL(result);
     handleButtonTwitter();
      })
   .catch(function(error) {
-    console.log(error);
+    
   });
+ 
 }
-  const shareLink = document.querySelector('.js-true');
-  const sectionLink = document.querySelector('.js-section-link');
-  const publicTwitter = document.querySelector('.js-btn-twitter');
+  
   function showURL(result) {
     if (result.success) {
       shareLink.innerHTML = '<a class="share-newcard__link" href=' + result.cardURL + '>' + result.cardURL + '</a>';
     } else {
-      sectionLink.innerHTML = 'ERROR:' + result.error;
+      sectionLink.innerHTML = '¡¡Ups!!  No hemos podido generar tu tarjeta. Por favor, rellena todos los campos del formulario.';
      }
  }
 
@@ -50,5 +56,6 @@ publicTwitter.addEventListener('click',handleButtonTwitter);
 
 function handleButtonTwitter (event) {
   event.preventDefault();
+  
  // publicTwitter.innerHTML = ``;
 }
