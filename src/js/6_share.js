@@ -25,6 +25,7 @@ function handleShareCard(event) {
   .then(function(result) {
     sectionLink.classList.remove('card-hidden');
     showURL(result);
+    handleButtonTwitter();
      })
   .catch(function(error) {
     console.log(error);
@@ -32,6 +33,7 @@ function handleShareCard(event) {
 }
   const shareLink = document.querySelector('.js-true');
   const sectionLink = document.querySelector('.js-section-link');
+  const publicTwitter = document.querySelector('.js-btn-twitter');
   function showURL(result) {
     if (result.success) {
       shareLink.innerHTML = '<a class="share-newcard__link" href=' + result.cardURL + '>' + result.cardURL + '</a>';
@@ -43,4 +45,10 @@ function handleShareCard(event) {
 
 
 buttonShare.addEventListener('click', handleShareCard);
+publicTwitter.addEventListener('click',handleButtonTwitter);
 
+
+function handleButtonTwitter (event) {
+  event.preventDefault();
+ // publicTwitter.innerHTML = ``;
+}
