@@ -1,7 +1,7 @@
 'use strict';
 
 const data = {
-    palette:'',
+    palette: '',
     name:'',
     job:'',
     photo:'',

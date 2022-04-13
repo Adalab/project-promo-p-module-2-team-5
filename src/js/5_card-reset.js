@@ -31,7 +31,7 @@ function resetCard() {
 }
 
 function resetForm (){
-  radio1.checked = 'selected';
+  radio1.checked = '';
   resetName.value='';
   resetJob.value='';
   fileField.value= '';

@@ -19,7 +19,11 @@ const jsShareContainer = document.querySelector('.js-share-container');
 
 jsDesignContainer.addEventListener('click',()=>{
   jsArrow1.classList.toggle('collapsible');
-  jsDesign.classList.toggle('hidden');
+  if (jsDesign.classList.contains('hidden')) {
+    jsDesign.classList.remove('hidden');
+  } else {
+    jsDesign.classList.add('hidden');
+  }
 });
 
 jsStuffedContainer.addEventListener('click',()=>{

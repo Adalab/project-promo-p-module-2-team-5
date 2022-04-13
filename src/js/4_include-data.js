@@ -9,6 +9,7 @@ const paintEmail = document.querySelector('.js-email');
 const paintPhone = document.querySelector('.js-phone');
 const paintLinkedin = document.querySelector('.js-linkedin');
 const paintGit = document.querySelector('.js-git');
+const paintRadios = document.querySelectorAll('.js_radio');
 
 const inputName = document.querySelector (".js-forname");
 const inputJob = document.querySelector (".js-forjob");
@@ -20,8 +21,15 @@ const inputGit = document.querySelector(".js-forgit");
 
 
 
+function paintInput() {
+  for (const eachRadio of paintRadios){
+    paintRadios.addEventListener('click');
+    console.log(eachRadio);
+}
+}
 
 function paintData() {
+
   if (data.name === '') {
     paintName.textContent = 'Nombre Apellido';
   } else {
@@ -68,6 +76,7 @@ function handleKeyData(event) {
     data.github = elementTyping.value;
   }
   paintData();
+  paintInput();
 }
 
 

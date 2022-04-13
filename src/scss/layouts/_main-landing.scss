@@ -60,6 +60,12 @@
     text-align: center;
     color: $gun-metal;
   }
+
+  &__pMenu {
+    font-family: $open;
+    font-weight: $regular;
+    font-size: 0.8rem;
+  }
 }
 
 .button {
@@ -71,6 +77,7 @@
   margin: 38px 75px 35px 65px;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
 
   &__link {
     color: $white-two;
