@@ -1,88 +1,70 @@
-'use strict';
+"use strict";
 ////que se envien los datos del formulario y se previsualicen en la tarjeta
 //
-const dataContainer = document.querySelector('.js-stuffed-form');
+const dataContainer = document.querySelector(".js-stuffed-form");
 
-const paintName = document.querySelector('.js-name');
-const paintJob = document.querySelector('.js-profession');
-const paintEmail = document.querySelector('.js-email');
-const paintPhone = document.querySelector('.js-phone');
-const paintLinkedin = document.querySelector('.js-linkedin');
-const paintGit = document.querySelector('.js-git');
-const paintRadios = document.querySelectorAll('.js_radio');
+const paintName = document.querySelector(".js-name");
+const paintJob = document.querySelector(".js-profession");
+const paintEmail = document.querySelector(".js-email");
+const paintPhone = document.querySelector(".js-phone");
+const paintLinkedin = document.querySelector(".js-linkedin");
+const paintGit = document.querySelector(".js-git");
+const paintRadios = document.querySelectorAll(".js_radio");
 
-const inputName = document.querySelector (".js-forname");
-const inputJob = document.querySelector (".js-forjob");
-const inputImage = document.querySelector (".js-forimage");
+const inputName = document.querySelector(".js-forname");
+const inputJob = document.querySelector(".js-forjob");
+const inputImage = document.querySelector(".js-forimage");
 const inputMail = document.querySelector(".js-formail");
 const inputPhone = document.querySelector(".js-forphone");
-const inputLkdn = document.querySelector ("js-forlkdn");
+const inputLkdn = document.querySelector("js-forlkdn");
 const inputGit = document.querySelector(".js-forgit");
 
-
-
-function paintInput() {
-  for (const eachRadio of paintRadios){
-    paintRadios.addEventListener('click');
-    console.log(eachRadio);
-}
-}
-
 function paintData() {
-
-  if (data.name === '') {
-    paintName.textContent = 'Nombre Apellido';
+  if (data.name === "") {
+    paintName.textContent = "Nombre Apellido";
   } else {
     paintName.innerHTML = data.name;
   }
-  if (data.job === '') {
-    paintJob.textContent = 'Front-end developer';
+  if (data.job === "") {
+    paintJob.textContent = "Front-end developer";
   } else {
     paintJob.innerHTML = data.job;
   }
-  
-  paintEmail.href = `mailto:${data.email}`;
+  paintInput.paintEmail.href = `mailto:${data.email}`;
   paintPhone.href = `tel:${data.phone}`;
   paintLinkedin.href = data.linkedin;
   paintGit.href = data.github;
+  localStorage.setItem("dataStored", JSON.stringify(data));
 }
 
 function handleKeyData(event) {
   const elementTyping = event.target;
-  if (elementTyping.name === 'name') {
+  if (elementTyping.name === "name") {
     data.name = elementTyping.value;
   }
   //else if (elementTyping.value === 'palette2'){
-   // data.palette = elementTyping.value;
+  // data.palette = elementTyping.value;
   //}
-
-  else if (elementTyping.name === 'profession') {
+  else if (elementTyping.name === "profession") {
     data.job = elementTyping.value;
   }
   //
   //else if (elementTyping.name === 'image'){
   //  data.photo = elementTyping.value;
   //}
-  else if (elementTyping.name === 'email') {
+  else if (elementTyping.name === "email") {
     data.email = elementTyping.value;
-  }
-  else if (elementTyping.name === 'phone') {
+  } else if (elementTyping.name === "phone") {
     data.phone = elementTyping.value;
-  }
-  else if (elementTyping.name === 'Linkedin') {
+  } else if (elementTyping.name === "Linkedin") {
     data.linkedin = elementTyping.value;
-  }
-  else if (elementTyping.name === 'GitHub') {
+  } else if (elementTyping.name === "GitHub") {
     data.github = elementTyping.value;
   }
+  let saveDataStuffed = JSON.parse(localStorage.getItem("dataStored"));
   paintData();
-  paintInput();
 }
 
-
-
-dataContainer.addEventListener('keyup',handleKeyData);
-
-
+dataContainer.addEventListener("keyup", handleKeyData);
 
 //si la usuaria no rellena todos los datos que salte un error antes del envío al servidor

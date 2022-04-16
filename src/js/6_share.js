@@ -18,7 +18,7 @@ const linkTwitter = document.querySelector(".link-twitter");
 
 function handleShareCard(event) {
   event.preventDefault();
-  fetch("https://awesome-profile-cards.herokuapp.com/card/", {
+  fetch("https://awesome-profile-cards.herokuapp.com/card", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data),

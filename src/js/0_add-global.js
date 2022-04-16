@@ -1,12 +1,12 @@
-'use strict';
+"use strict";
 
-const data = {
-    palette: '',
-    name:'',
-    job:'',
-    photo:'',
-    email: '',
-    phone:'',
-    linkedin: '',
-    github: '',
+let data = {
+  palette: "",
+  name: "",
+  job: "",
+  photo: "",
+  email: "",
+  phone: "",
+  linkedin: "",
+  github: "",
 };
