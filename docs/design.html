@@ -51,29 +51,37 @@
               <ul class="card-list">
                 <li class="card-list__item border">
                   <a
+                    target="blank"
                     href=""
                     class="card-list__item--link icon-palette js-phone js_reset-telf"
+                    title="Teléfono"
                     ><i class="fa-solid fa-mobile-screen-button"></i
                   ></a>
                 </li>
                 <li class="card-list__item border">
                   <a
+                    target="blank"
                     href=""
                     class="card-list__item--link icon-palette js-email js_reset-send"
+                    title="Correo electrónico"
                     ><i class="fa-regular fa-envelope"></i
                   ></a>
                 </li>
                 <li class="card-list__item border">
                   <a
+                    target="blank"
                     href=""
                     class="card-list__item--link icon-palette js-linkedin js_reset-lknd"
+                    title="Perfil de Linkedin"
                     ><i class="fa-brands fa-linkedin-in"></i
                   ></a>
                 </li>
                 <li class="card-list__item border">
                   <a
+                    target="blank"
                     href=""
                     class="card-list__item--link icon-palette js-git js_reset-github"
+                    title="Perfil de GitHub"
                     ><i class="fa-brands fa-github-alt"></i
                   ></a>
                 </li>
@@ -93,18 +101,15 @@
           </div>
           <!--COLORS-->
           <!--PALLETE ONE-->
-          <section
-            class="design-fieldset__design-section hidden js-design js-reset-form"
-          >
+          <section class="design-fieldset__design-section js-design js-reset-form">
             <div class="colors__colors-box">
               <label for="palette" class="colors">Colores</label>
               <input
-                class="colors__colors-input js_radio1"
+                class="colors__colors-input js_radio1 js_radio"
                 type="radio"
                 name="palette"
-                id="palette1"
-                value="palette1"
-                checked="selected"
+                id="1"
+                value="1"
               />
               <span class="spectrum-blue1"></span>
               <span class="spectrum-blue2"></span>
@@ -113,11 +118,11 @@
             <!--PALETTE TWO-->
             <div class="colors__colors-box">
               <input
-                class="colors__colors-input js_radio2"
+                class="colors__colors-input js_radio2 js_radio"
                 type="radio"
                 name="palette"
-                id="palette2"
-                value="palette2"
+                id="2"
+                value="2"
               />
               <span class="spectrum-warm1"></span>
               <span class="spectrum-warm2"></span>
@@ -126,11 +131,11 @@
             <!--PALETTE THREE-->
             <div class="colors__colors-box">
               <input
-                class="colors__colors-input js_radio3"
+                class="colors__colors-input js_radio3 js_radio"
                 type="radio"
                 name="palette"
-                id="palette3"
-                value="palette3"
+                id="3"
+                value="3"
               />
               <span class="spectrum-mix1"></span>
               <span class="spectrum-mix2"></span>
@@ -171,12 +176,17 @@
               required
             />
             <!--ADD IMAGE-->
-            <label class="stuffed-titles " for="image">Imagen de perfil</label>
+            <label class="stuffed-titles" for="image">Imagen de perfil</label>
             <div class="false-stuffed">
               <label class="false-stuffed__false-button js__profile-trigger" for="image"
                 >Añadir imagen</label
               >
-              <input class="hidden js__profile-upload-btn js-forimage" type="file" id="image" name="image" />
+              <input
+                class="hidden js__profile-upload-btn js-forimage"
+                type="file"
+                id="image"
+                name="image"
+              />
               <div class="false-stuffed__false-square js__profile-preview"></div>
             </div>
             <!--EMAIL-->
@@ -206,7 +216,7 @@
               type="text"
               name="Linkedin"
               id="Linkedin"
-              placeholder="Ej: linkedin.com/in/Pepita/Perez"
+              placeholder="Ej: PepitaPerez"
             />
             <label class="stuffed-titles" for="GitHub">GitHub</label>
             <input
@@ -214,7 +224,7 @@
               type="text"
               name="GitHub"
               id="GitHub"
-              placeholder="Ej: @Pepiperez"
+              placeholder="Ej: PepiPerez"
             />
             <span class="cutting-line2"></span>
           </div>
@@ -236,15 +246,9 @@
           </section>
           <section class="share-newcard card-hidden js-section-link">
             <h3 class="share-newcard__text js-false">La tarjeta ha sido creada:</h3>
-            <a class="share-newcard__link js-true" href=""></a>
+            <a target="blank" class="share-newcard__link js-true" href=""></a>
             <button class="share-newcard__button js-btn-twitter">
-              <a
-                class="js-link-twitter"
-                href="https://twitter.com/intent/tweet?text=Aquí%20tienes%20las%20tarjetas%20del%20equipo%20cinco%20"
-                target="_blank"
-              >
-                <i class="fa-brands fa-twitter"></i><span>Compartir en twitter</span></a
-              >
+              <a class="link-twitter"></a>
             </button>
             <span class="section-share__line"></span>
           </section>
@@ -255,8 +259,12 @@
     </main>
     <footer>
       <div class="footer">
-      <small>Awesome profile-cards @2022</small>
-      <img class="footer__logofoot" src="./assets/images/logo-adalab.png" alt="Logo Adalab" />
+        <small>Awesome profile-cards @2022</small>
+        <img
+          class="footer__logofoot"
+          src="./assets/images/logo-adalab.png"
+          alt="Logo Adalab"
+        />
       </div>
     </footer>
 
