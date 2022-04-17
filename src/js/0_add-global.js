@@ -1,7 +1,7 @@
 "use strict";
 
 let data = {
-  palette: "",
+  palette: 0,
   name: "",
   job: "",
   photo: "",

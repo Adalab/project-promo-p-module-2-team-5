@@ -2,15 +2,14 @@
 ////que se envien los datos del formulario y se previsualicen en la tarjeta
 //
 const dataContainer = document.querySelector(".js-stuffed-form");
-
 const paintName = document.querySelector(".js-name");
 const paintJob = document.querySelector(".js-profession");
 const paintEmail = document.querySelector(".js-email");
 const paintPhone = document.querySelector(".js-phone");
 const paintLinkedin = document.querySelector(".js-linkedin");
 const paintGit = document.querySelector(".js-git");
-const paintRadios = document.querySelectorAll(".js_radio");
-
+const allRadios = document.querySelectorAll(".js_radio");
+let valueInputRadio = "";
 const inputName = document.querySelector(".js-forname");
 const inputJob = document.querySelector(".js-forjob");
 const inputImage = document.querySelector(".js-forimage");
@@ -34,8 +33,14 @@ function paintData() {
   paintPhone.href = `tel:${data.phone}`;
   paintLinkedin.href = data.linkedin;
   paintGit.href = data.github;
-  profileImage.style.backgroundImage = `url(${data.photo})`;
-  profilePreview.style.backgroundImage = `url(${data.photo})`;
+
+  if (data.photo === "") {
+    profileImage.classList.add("preview-card__image");
+  } else {
+    profileImage.style.backgroundImage = `url(${data.photo})`;
+    profilePreview.style.backgroundImage = `url(${data.photo})`;
+  }
+  valueInputRadio = data.palette;
 
   setLocalStorage();
 }
@@ -68,6 +73,14 @@ function handleKeyData(event) {
   paintData();
 }
 
-dataContainer.addEventListener("keyup", handleKeyData);
+function handleAllRadios(event) {
+  const valueInputRadio = parseInt(event.target.value);
+  console.log(valueInputRadio);
+  return valueInputRadio;
+}
 
+for (const eachRadio of allRadios) {
+  eachRadio.addEventListener("click", handleAllRadios);
+}
 //si la usuaria no rellena todos los datos que salte un error antes del envío al servidor
+dataContainer.addEventListener("keyup", handleKeyData);
