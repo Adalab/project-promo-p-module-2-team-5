@@ -30,11 +30,14 @@ function paintData() {
   } else {
     paintJob.innerHTML = data.job;
   }
-  paintInput.paintEmail.href = `mailto:${data.email}`;
+  paintEmail.href = `mailto:${data.email}`;
   paintPhone.href = `tel:${data.phone}`;
   paintLinkedin.href = data.linkedin;
   paintGit.href = data.github;
-  localStorage.setItem("dataStored", JSON.stringify(data));
+  profileImage.style.backgroundImage = `url(${data.photo})`;
+  profilePreview.style.backgroundImage = `url(${data.photo})`;
+
+  setLocalStorage();
 }
 
 function handleKeyData(event) {
@@ -61,7 +64,7 @@ function handleKeyData(event) {
   } else if (elementTyping.name === "GitHub") {
     data.github = elementTyping.value;
   }
-  let saveDataStuffed = JSON.parse(localStorage.getItem("dataStored"));
+
   paintData();
 }
 

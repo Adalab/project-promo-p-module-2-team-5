@@ -1,13 +1,14 @@
 "use strict";
-let saveDataStuffed = JSON.parse(localStorage.getItem("dataStored"));
 
-if (saveDataStuffed !== null) {
-  // si el local storage esta lleno con los datos ya guardados los pinta
-  data = saveDataStuffed;
+if (localStorage.getItem("dataStored") !== null) {
+  getLocalStorage();
+}
+
+function setLocalStorage() {
+  localStorage.setItem("dataStored", JSON.stringify(data));
+}
+
+function getLocalStorage() {
+  data = JSON.parse(localStorage.getItem("dataStored"));
   paintData();
-  paintInput();
-} else {
-  // si el local storage esta vacio llamo a la función handleKeyData para que vaya recogiendo los datos que introduce la usuaria
-  console.log("no hay nada en local");
-  handleKeyData();
 }
